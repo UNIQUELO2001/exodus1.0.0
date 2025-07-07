@@ -14,16 +14,13 @@ export default function Header() {
     <TamaguiProvider config={config}>
         <YStack>
             <XStack style={styles.container}>
-                <Text style={styles.text}>Exodus</Text>
+                <Text style={styles.text}>Notification</Text>
                 <XStack style={styles.icons}>
                   <Button style={styles.button}>
                     <Icons.Search size="$1.5" color={'#D88632'}/>
                   </Button>
                   <Button style={styles.button} onPress={() => router.push('../screens/notificationScreen')}>
-                    <Icons.Bell size="$1.5" color={'#D88632'}/>
-                  </Button>
-                  <Button style={styles.button}>
-                    <Icons.MessageSquareText size="$1.5" color={'#D88632'}/>
+                    <Icons.Ellipsis size="$1.5" color={'#D88632'}/>
                   </Button>
                 </XStack>
             </XStack>

@@ -16,4 +16,11 @@ export const posts = [
   // Add more posts...
 ]
 
+export const user = [
+    {
+    name: "Den Cleavon Babas",
+    avatar:'https://www.newsnationnow.com/wp-content/uploads/sites/108/2022/07/Cat.jpg?w=2560&h=1440&crop=1'
+    }
+]
+
 

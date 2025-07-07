@@ -71,7 +71,7 @@ export default function LoginScreen() {
             <XStack style={styles.signupContainer}>
                 <Text style={styles.signupText}>
                 New to Exodus?
-                <Anchor href='./components/signUp' style={styles.signupLink}>Sign Up</Anchor>
+                <Anchor href='./signUp' style={styles.signupLink}>Sign Up</Anchor>
             </Text>
             </XStack>
         </YStack>

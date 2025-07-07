@@ -14,17 +14,14 @@ export default function Header() {
     <TamaguiProvider config={config}>
         <YStack>
             <XStack style={styles.container}>
-                <Text style={styles.text}>Exodus</Text>
+                <Button style={styles.button} onPress={() => router.push('../')}>
+                    <Icons.ChevronLeft size="$1.5" color={'#D88632'}/>
+                </Button>
+                <Text style={styles.text}>Books</Text>
                 <XStack style={styles.icons}>
-                  <Button style={styles.button}>
-                    <Icons.Search size="$1.5" color={'#D88632'}/>
-                  </Button>
-                  <Button style={styles.button} onPress={() => router.push('../screens/notificationScreen')}>
-                    <Icons.Bell size="$1.5" color={'#D88632'}/>
-                  </Button>
-                  <Button style={styles.button}>
-                    <Icons.MessageSquareText size="$1.5" color={'#D88632'}/>
-                  </Button>
+                    <Button style={styles.button}>
+                        <Icons.Ellipsis size="$1.5" color={'#D88632'}/>
+                    </Button>
                 </XStack>
             </XStack>
             <Separator />
@@ -51,7 +48,6 @@ const styles = StyleSheet.create({
     container: {
       padding: 4,
       alignItems: 'center',
-      justifyContent: 'space-between',
       backgroundColor: '#FFF1E3'
     },
 

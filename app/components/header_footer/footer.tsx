@@ -18,19 +18,19 @@ export default function Footer() {
   return (
     <TamaguiProvider config={config}>
         <XStack style={styles.container}>
-        <Button onPress={() => router.push('./home')} style={styles.button}>
-            <Icons.House size="$1.5"  color={isActive('/home') ? '#FFF' : '#D88632'} strokeWidth={isActive('/home') ? 2 : 1.5} />
+        <Button onPress={() => router.push('../screens/homeScreen')} style={styles.button}>
+            <Icons.House size="$1.5"  color={isActive('/homeScreen') ? '#FFF' : '#D88632'} strokeWidth={isActive('/homeScreen') ? 2 : 1.5} />
         </Button>
-        <Button onPress={() => router.push('./exflix_for_you')} style={styles.button}>
-            <Icons.Film size="$1.5" color={isActive('/exflix_for_you') ? '#FFF' : '#D88632'} strokeWidth={isActive('/exflix_for_you') ? 2 : 1.5}/>
+        <Button onPress={() => router.push('../screens/exflixScreen')} style={styles.button}>
+            <Icons.Film size="$1.5" color={isActive('/exflixScreen') ? '#FFF' : '#D88632'} strokeWidth={isActive('/exflixScrenn') ? 2 : 1.5}/>
         </Button>
-        <Button onPress={() => router.push('./exflix_for_you')} style={styles.button}>
+        <Button onPress={() => router.push('../screens/createPostScreen')} style={styles.button}>
             <Icons.Plus size="$1.5" color={isActive('/home') ? '#FFF' : '#D88632'} strokeWidth={isActive('/home') ? 2 : 1.5}/>
         </Button>
-        <Button onPress={() => router.push('./shop_products')} style={styles.button}>
+        <Button onPress={() => router.push('./shoppingProductScreen')} style={styles.button}>
             <Icons.Store size="$1.5" color={isActive('/shop_products') ? '#FFF' : '#D88632'} strokeWidth={isActive('/shop_products') ? 2 : 1.5}/>
         </Button>
-        <Button onPress={() => router.push('./menu')} style={styles.button}>
+        <Button onPress={() => router.push('./menuScreen')} style={styles.button}>
             <Icons.Menu size="$1.5" color={isActive('/menu') ? '#FFF' : '#D88632'} strokeWidth={isActive('/menu') ? 2 : 1.5}/>
         </Button>
         

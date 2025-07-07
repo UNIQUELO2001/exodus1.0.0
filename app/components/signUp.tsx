@@ -106,7 +106,7 @@ export default function SignUp() {
               style={styles.emailpassInput}/>
           </YStack>
 
-          <Button  onPress={() => router.push('../login')} style={styles.button}>
+          <Button  onPress={() => router.push('./login')} style={styles.button}>
           <Text style={styles.textButton}>
             Create Account
           </Text>
