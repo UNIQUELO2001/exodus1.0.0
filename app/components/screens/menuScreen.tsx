@@ -103,7 +103,7 @@ export default function App() {
               </View>
             </ScrollView>
               <View flexDirection="row" flexWrap="wrap" justify="space-between" px="$4" verticalAlign='center'>
-                <Button style={styles.button}>
+                <Button style={styles.button} onPress={() => router.push('../screens/groupsScreen')}>
                   <Icons.Users/>
                   <Text>Groups</Text>
                 </Button>
@@ -111,15 +111,15 @@ export default function App() {
                   <Icons.Calendar/>
                   <Text>Events</Text>
                 </Button>
-                <Button style={styles.button}>
+                <Button style={styles.button} onPress={() => router.push('../screens/savedScreen')}>
                   <Icons.Bookmark/>
                   <Text>Saved</Text>
                 </Button>
-                <Button style={styles.button}>
+                <Button style={styles.button} onPress={() => router.push('../screens/friendsScreen')}>
                   <Icons.UserCheck/>
                   <Text>Friends</Text>
                 </Button>
-                <Button style={styles.button}>
+                <Button style={styles.button} onPress={() => router.push('../screens/audiobookScreen')}>
                   <Icons.BookAudio/>
                   <Text>Audiobooks</Text>
                 </Button>
@@ -127,7 +127,7 @@ export default function App() {
                   <Icons.LibraryBig/>
                   <Text>Books</Text>
                 </Button>
-                <Button width='98%' m='$2' background='#FBC71D'>
+                <Button width='98%' m='$2' background='#FBC71D' onPress={() => router.push('../screens/forumsScreen')}>
                   <Text>See all</Text>
                 </Button>
               

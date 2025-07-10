@@ -6,42 +6,42 @@ import { useRouter, usePathname } from 'expo-router';
 import { StyleSheet } from 'react-native';
 
 export default function Header() {
-
-  return (
-    <TamaguiProvider config={config}>
-        <YStack>
-            <XStack style={styles.xContainer}>
-                <Text style={styles.text}>Exflix</Text>
-                <XStack style={styles.icons}>
-                    <Icons.CircleUser size="$1.5" mr="$3" color={'#D88632'}/>
-                    <Icons.Search size="$1.5" mr="$3" color={'#D88632'}/>
+    const router = useRouter();
+    return (
+        <TamaguiProvider config={config}>
+            <YStack>
+                <XStack style={styles.xContainer}>
+                    <Text style={styles.text}>Exflix</Text>
+                    <XStack style={styles.icons}>
+                        <Icons.CircleUser size="$1.5" mr="$3" color={'#D88632'}/>
+                        <Icons.Search size="$1.5" mr="$3" color={'#D88632'}/>
+                    </XStack>
                 </XStack>
-            </XStack>
 
 
-            <YStack style={styles.yContainer}>
-                <XStack>
-                    <Button style={styles.button}>
-                        <Text fontSize={18}>For You</Text>
-                    </Button>
-                    <Separator style={styles.separator} vertical />
-                    <Button style={styles.button}>
-                        <Text style={styles.navigation}>Shorts</Text>
-                    </Button>
-                    <Separator style={styles.separator} vertical />
-                    <Button style={styles.button}>
-                        <Text fontSize={18}>Following</Text>
-                    </Button>
-                </XStack>
+                <YStack style={styles.yContainer}>
+                    <XStack>
+                        <Button style={styles.button}>
+                            <Text fontSize={18}>For You</Text>
+                        </Button>
+                        <Separator style={styles.separator} vertical />
+                        <Button style={styles.button} onPress={() => router.push('../screens/exflixShortsScreen')}>
+                            <Text style={styles.navigation}>Shorts</Text>
+                        </Button>
+                        <Separator style={styles.separator} vertical />
+                        <Button style={styles.button}>
+                            <Text fontSize={18}>Following</Text>
+                        </Button>
+                    </XStack>
+                </YStack>
+
+                <Separator my={1} />
             </YStack>
+        </TamaguiProvider>
+        
+        
 
-            <Separator my={1} />
-        </YStack>
-    </TamaguiProvider>
-    
-    
-
-  )
+    )
 }
 
 const styles = StyleSheet.create({
