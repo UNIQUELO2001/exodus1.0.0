@@ -9,7 +9,7 @@ import Footer from '../header_footer/footer'
 
 import { Profile, Shortcuts, Pages, Bars } from '../elements/menuContent'
 
-export default function Menu (){
+export default function Test2 (){
 
     return (
         <TamaguiProvider config={config}>

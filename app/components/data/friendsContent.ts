@@ -1,4 +1,4 @@
-interface Friends {
+export interface Friends {
     avatar: string;
     name: string;
 }
