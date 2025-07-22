@@ -18,12 +18,12 @@ export default function App() {
           <Text style={styles.exodusText}>
             Exodus
           </Text>
-          <Button style={styles.signupButton} onPress={() => router.push('../components/signUp')}>
+          <Button style={styles.signupButton} onPress={() => router.push('../components/LoginComponent/SignUp/signUp')}>
             <Text style={styles.signupText}> Sign Up </Text>
           </Button>
           <Text style={styles.bottomText}>
             Have an Account? <Anchor asChild>
-              <Text onPress={() => router.push('../components/login')} style={styles.loginText}>
+              <Text onPress={() => router.push('../components/LoginComponent/login')} style={styles.loginText}>
                 Log in
               </Text>
               </Anchor>
