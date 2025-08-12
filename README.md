@@ -23,6 +23,11 @@ Exodus was created to:
 - Expo CLI
 - Git
 
+
+### Screenshot
+<img width="487" height="941" alt="image" src="https://github.com/user-attachments/assets/3e81dd04-91b7-437b-abeb-04a81bc1b431" />
+
+
 ### Installation
 
 1. **Clone the repository:**
