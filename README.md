@@ -51,6 +51,4 @@ npx expo install
 or
 npx install
 
-to run:
-'''bash
 npx expo start
